@@ -24,4 +24,49 @@
 
 ### 定数と変数の命名(Naming Constants and Variables)
 
-** 問い無し
+** 問い無し **
+
+
+### 定数とと変数の出力(Printing Constants and Variables)
+
+** 問い無し **
+
+
+### コメント(Comments)
+
+** 問い無し **
+
+
+### セミコロン(Semicolons)
+
+** 問い無し **
+
+
+### 整数(Integers)
+
+** 問い無し **
+
+
+### 整数の境界(Integer Bounds)
+
+** 問い無し **
+
+
+### Int
+
+** 問い無し **
+
+
+### UInt
+
+** 問い無し **
+
+
+### 浮動小数点数(Floating-Point Numbers)
+
+** Q4. DoubleとFloatの定義は？ **
+
+
+### 型安全と型推論(Type Safety and Type Inference)
+
+** 問い無し **

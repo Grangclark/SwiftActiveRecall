@@ -51,3 +51,16 @@ var welcomeMessage: String
 
 </details>
 ---
+
+** A4. DoubleとFloatの定義は？ **
+
+<思い出してから下を確認>
+
+<details>
+<summary>答えを見る</summary>
+
+・Double は 64 ビットの浮動小数点数を表します
+・Float は 32 ビットの浮動小数点数を表します
+
+</details>
+---
