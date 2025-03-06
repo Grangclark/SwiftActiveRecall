@@ -64,3 +64,18 @@ var welcomeMessage: String
 
 </details>
 ---
+
+** Q5. 整数値と浮動小数点数の計算を行い、円周率を表示してみてください **
+
+<思い出してから下を確認>
+
+<details>
+<summary>答えを見る</summary>
+
+let three = 3
+let pointOneFourOneFiveNine = 0.14159
+let pi = Double(three) + pointOneFourOneFiveNine
+// pi は 3.14159 で Double 型と推論されます
+
+</details>
+---

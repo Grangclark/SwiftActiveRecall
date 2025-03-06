@@ -70,3 +70,18 @@
 ### 型安全と型推論(Type Safety and Type Inference)
 
 ** 問い無し **
+
+
+### 数値リテラル(Numeric Literals)
+
+** 問い無し **
+
+
+### 数値型の変換(Numeric Type Conversion)
+
+** Q5. 整数値と浮動小数点数の計算を行い、円周率を表示してみてください **
+
+
+### タイプエイリアス(Type Aliases)
+
+** 問い無し **
