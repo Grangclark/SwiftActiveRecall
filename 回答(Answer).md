@@ -79,3 +79,22 @@ let pi = Double(three) + pointOneFourOneFiveNine
 
 </details>
 ---
+
+** Q6. ブール値を使った簡単なif文を作成してみてください **
+<思い出してから下を確認>
+
+<details>
+<summary>答えを見る</summary>
+
+let orangesAreOrange = true
+let turnipsAreDelicious = false
+
+if turnipsAreDelicious {
+    print("Mmm, tasty turnips!")
+} else {
+    print("Eww, turnips are horrible.")
+}
+// Eww, turnips are horrible.
+
+</details>
+---
