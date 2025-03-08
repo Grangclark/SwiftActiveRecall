@@ -158,3 +158,60 @@ if let firstNumber = Int("4") {
 // 4 < 42 < 100
 
 // ---
+
+
+// ** Q17. オプショナル値がnilかどうか判別して、nil 結合演算子( ?? ) を使用して
+//         デフォルトの値を提供する、挨拶文を作成して下さい **
+
+let name: String? = nil
+let greeting = "Hello, " + (name ?? "friend") + "!"
+print(greeting)
+// Hello, friend!
+
+// ---
+
+
+// ** Q18. オプショナル（Optional<T>）に格納された値を強制的アンラップするアプローチを2パターン記述して下さい **
+
+let possibleNumber = "123"
+let convertedNumber = Int(possibleNumber)
+
+// アプローチ①
+// ! を使って 強制的にアンラップ し、Int 型の number を取得する
+// convertedNumber が nil の場合、プログラムは クラッシュ（fatal error） する
+let number = convertedNumber!
+
+// アプローチ②
+// guard let を使うことで、convertedNumber が nil の場合は即座にエラーメッセージを出して終了 するようにしている
+guard let number = convertedNumber else {
+    fatalError("The number was invalid")
+}
+
+// ---
+
+
+// ** Q19. オプショナルに一度値が設定された後は必ず値が存在するということが明らかな、
+//         暗黙アンラップオプショナルを表すコードを記載して下さい **
+
+// ? の代わりに ! を型の後に付けることで、暗黙アンラップオプショナルを書くことができます(String? の代わりに String! と書くなど)
+let possibleString: String? = "An optional string."
+let forcedString: String = possibleString! // ! が必要
+
+// possibleString は String?（オプショナル型）
+// nil になる可能性がある。
+// そのまま String 型の変数 forcedString に代入できない。
+// possibleString! を使って強制アンラップ
+// possibleString に値が入っていれば、String 型として forcedString に代入できる。
+// でも、もし possibleString が nil だった場合、クラッシュする！
+
+let assumedString: String! = "An implicitly unwrapped optional string."
+let implicitString: String = assumedString // ! は自動的に不要になる
+
+// String!（暗黙的アンラップオプショナル）とは？
+// String?（普通のオプショナル）と似ているが、値を取り出すときに ! を明示的に書かなくてもOK！
+// assumedString は "ほぼ確実に nil じゃない" という前提で扱う。
+// implicitString に代入するとき、自動でアンラップされて String 型になる！
+// 何が違う？
+// String? は ! を使わないと String に変換できない。
+// String! は ! を使わなくても String 型として扱える。
+
