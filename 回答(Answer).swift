@@ -215,3 +215,24 @@ let implicitString: String = assumedString // ! は自動的に不要になる
 // String? は ! を使わないと String に変換できない。
 // String! は ! を使わなくても String 型として扱える。
 
+// ---
+
+
+// ** Q20. 暗黙アンラップオプショナル値が nil かどうかのチェック方法を記述して下さい **
+
+if assumedString != nil {
+    print(assumedString!)
+}
+// An implicitly unwrapped optional string.
+
+// ---
+
+
+// ** Q21. 暗黙アンラップオプショナルでオプショナルバインディングを行って下さい **
+
+if let definiteString = assumedString {
+    print(definiteString)
+}
+// An implicitly unwrapped optional string.
+
+// ---
