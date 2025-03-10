@@ -257,3 +257,22 @@ do {
 }
 
 // ---
+
+
+** Q24. まず関数を定義して、その関数から発生が予想される複数のエラーに
+        応答するためのエラーハンドリングについて簡単に記述してみて下さい **
+
+func makeASandwich() throws {
+    // ...
+}
+
+do {
+    try makeASandwich()
+    eatASandwich()
+} catch SandwichError.outOfCleanDishes {
+    washDishes()
+} catch SandwichError.missingIngredients(let ingredients) {
+    buyGroceries(ingredients)
+}
+
+// ---
