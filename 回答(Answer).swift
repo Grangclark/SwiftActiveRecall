@@ -236,3 +236,24 @@ if let definiteString = assumedString {
 // An implicitly unwrapped optional string.
 
 // ---
+
+
+// ** Q22. 関数の呼び出し元でエラーをキャッチして、適切に応答するための関数の基本構文を記述して下さい **
+
+func canThrowAnError() throws {
+    // この関数はエラーをスローするかもしれません
+}
+
+// ---
+
+
+// ** Q23. doで新しいスコープを生成して、エラーを 1 つ以上の catch 句でキャッチする基本構文を記述して下さい **
+
+do {
+    try canThrowAnError()
+    // エラーはスローされませんでした
+} catch {
+    // エラーがスローされました
+}
+
+// ---
