@@ -41,3 +41,15 @@ for index in 1...5 {
 // 4 × 5 は 20
 // 5 × 5 は 25
 
+
+// ** Q4. 半開範囲演算子を使用して、for文でリストの要素に順番にアクセスする例文を作成して下さい。 **
+
+let names = ["Anna", "Alex", "Brian", "Jack"]
+let count = names.count
+for i in 0..<count {
+    print("人物 \(i + 1) の名前は \(names[i])")
+}
+// 人物 1 の名前は Anna
+// 人物 2 の名前は Alex
+// 人物 3 の名前は Brian
+// 人物 4 の名前は Jack
