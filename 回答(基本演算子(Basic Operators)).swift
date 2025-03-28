@@ -53,3 +53,19 @@ for i in 0..<count {
 // 人物 2 の名前は Alex
 // 人物 3 の名前は Brian
 // 人物 4 の名前は Jack
+
+
+// ** Q5. 以下の配列を片側範囲演算子を使ったfor文でprintしてみて下さい。 **
+
+for name in names[2...] {
+    print(name)
+}
+// Brian
+// Jack
+
+for name in names[...2] {
+    print(name)
+}
+// Anna
+// Alex
+// Brian
